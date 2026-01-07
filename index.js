@@ -100,3 +100,15 @@ function evenNumber(arr) {
     return even;
 }
 // console.log(evenNumber([1, 2, 3, 4, 5, 6]));
+
+// Problem 8: Capitalize First Letter of Each Word
+// Write a function that capitalizes the first letter of each word in a string.
+
+function capitalizeWords(str) {
+    let words = str.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+    return words.join(" ");
+}
+console.log(capitalizeWords("hello world from javascript"));
