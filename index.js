@@ -22,4 +22,22 @@ function countVowels(str) {
     }
     return count;
 }
-console.log(countVowels("Programming"));
+// console.log(countVowels("Programming"));
+
+// Problem 3: Check for Palindrome
+
+function palindromeCheck(str) {
+    let result = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        result = result + str[i];
+    }
+    if (str === result) {
+        return true;
+    } else {
+        return false;
+    }
+}
+// console.log(palindromeCheck("madam"));
+// console.log(palindromeCheck("hello"));
+
+
