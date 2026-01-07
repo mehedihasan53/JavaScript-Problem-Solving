@@ -1,4 +1,6 @@
 // Problem 1: Reverse a String
+// Write a function that takes a string and returns it reversed.
+
 
 function reverseString(str) {
     let result = "";
@@ -11,6 +13,8 @@ function reverseString(str) {
 
 
 // Problem 2: Count Vowels in a String
+// Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
+
 
 function countVowels(str) {
     let count = 0;
@@ -25,6 +29,8 @@ function countVowels(str) {
 // console.log(countVowels("Programming"));
 
 // Problem 3: Check for Palindrome
+// Write a function that checks if a string is a palindrome (reads the same forward and backward).
+
 
 function palindromeCheck(str) {
     let result = "";
@@ -40,4 +46,15 @@ function palindromeCheck(str) {
 // console.log(palindromeCheck("madam"));
 // console.log(palindromeCheck("hello"));
 
-
+// Problem 4: Find the Maximum Number
+// Write a function that takes an array of numbers and returns the largest number.
+function findMaxNumber(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+console.log(findMaxNumber([5, 1, 9, 3]));
