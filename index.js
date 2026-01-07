@@ -86,3 +86,17 @@ function num(arr) {
     return sum;
 }
 // console.log(num([1, 2, 3, 4]));
+
+// Problem 7: Find Even Numbers in an Array
+// Write a function that returns all even numbers from a given array.
+
+function evenNumber(arr) {
+    let even = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            even.push(arr[i]);
+        }
+    }
+    return even;
+}
+// console.log(evenNumber([1, 2, 3, 4, 5, 6]));
