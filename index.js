@@ -73,3 +73,16 @@ function removeDuplicates(arr) {
     return unique;
 }
 // console.log(removeDuplicates([1, 2, 2, 3, 4, 4,]));
+
+
+// Problem 6: Sum of All Numbers in an Array
+// Write a function that returns the sum of all numbers in an array.
+
+function num(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+// console.log(num([1, 2, 3, 4]));
